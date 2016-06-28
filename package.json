@@ -1,0 +1,19 @@
+{
+  "name": "angular_test",
+  "version": "1.0.0",
+  "description": "test voor in de klas",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "angular",
+    "md2"
+  ],
+  "author": "Berend Weij",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}

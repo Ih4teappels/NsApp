@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+* {
+	margin: 0;
+}
+
+html {
+	font-family: Raleway;
+	background-color: #ffc917;
+  text-align: center;
+}
+
+body {
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+}
+
+input, .stationsList-row {
+  width:400px;
+  padding:5px;
+  box-sizing: border-box;
+}
+
+.data-row {
+
+}
+
+#appWindow {
+  /*margin-top: 5em;*/
+}
+
+.searchBar {
+	margin-left: 1em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.stationsList-row {
+  color:black;
+  background: lightgray;
+  border-bottom: 1px dashed white;
+  width: 500px;
+}
+
+.stationsList-row.active {
+  color:orange;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#stationList {
+  display: inline-block;
+  z-index: -1;
+  cursor: default;
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  -ms-user-select:none; 
+  user-select:none;
+  -o-user-select:none;
+  position: absolute;
+  right: 0px;
+}
+
+.stationList-list {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+
+.stationList-map {
+  /*display: inline-block;*/
+  position: absolute;
+  left: 0px;
+  height: calc(100%);
+  width: calc(100% - 500px);
+  top: 0;
+  left: 0;
+}
+
+
+
+.stationDetails {
+  display: inline-block;
+  vertical-align: top;
+  width: 499px;
+  height:100%;
+  border:1px solid black;
+  padding-top:5px;
+  padding-bottom: 5px;
+  z-index: 100;
+  background-color: #005ca0;
+  color: #ffc917;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.google-map {
+  height: 100%;
+}
+
+
+
+.stationDetails.ng-enter,
+.stationDetails.ng-leave.ng-leave-active {
+  opacity:0;
+  -ms-transform: scale(0.80); /* IE 9 */
+  -webkit-transform: scale(0.80); /* Safari */
+  transform: scale(0.80);
+}
+
+.stationDetails.ng-leave,
+.stationDetails.ng-enter.ng-enter-active {
+  opacity:1;
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari */
+  transform: scale(1);
+}
+
+.animatedCSS {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.angular-google-map-container { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; 
+  width: 100%;
+}
